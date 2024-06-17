@@ -1,0 +1,6 @@
+{
+    "references": [
+        {"path": "./electron.tsconfig.json"},
+        {"path": "./react.tsconfig.json"}
+    ]
+}
