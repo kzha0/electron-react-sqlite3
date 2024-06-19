@@ -1,15 +1,17 @@
 {
     "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
     "fileNamingConvention": "pascal-case",
-    "boardGlobalSetup": "codux/boards-global-setup.ts",
-    "boardsPath": "packages/common-ui/src/components",
+    "boardGlobalSetup": "./codux/boards-global-setup.ts",
+    "boardsPath": "./packages/common-ui/src/components",
     "componentsDiscovery": {
-        "include": ["packages/common-ui/src/components/**"],
-        "exclude": ["codux/**"]
+        "include": ["./packages/common-ui/src/components/**"],
+        "exclude": ["./codux/**"]
     },
     "newComponent": {
-        "componentsPath": "packages/common-ui/src/components",
-        "templatesPath": "codux/templates"
+        "componentsPath": "./packages/common-ui/src/components",
+        "templatesPath": {
+            "templatesPath": "./codux/templates"
+        }
     },
     "safeRender": {
         "maxInstancesPerComponent": 1000
@@ -18,7 +20,7 @@
         "install": {
             "title": "Install",
             "description": "Run install",
-            "command": "npm i",
+            "command": "npm i --legacy-peer-deps",
             "trigger": ["checkout", "pull", "setup"]
         }
     },

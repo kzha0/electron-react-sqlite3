@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "_version": "3.0.0",
+    "compilerOptions": {
+        "composite": true,
+        "target": "ESNext",
+        "module": "commonjs",
+        "allowJs": true,
+
+        "sourceMap": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "moduleResolution": "node",
+
+        "removeComments": true
+    },
+    "include": ["./package.json", "electron", "packages"],
+}

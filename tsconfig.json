@@ -1,6 +1,23 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "_version": "3.0.0",
+    "compilerOptions": {
+        "skipLibCheck": true,
+        
+        "useDefineForClassFields": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+
+    },
     "references": [
-        {"path": "./electron.tsconfig.json"},
-        {"path": "./react.tsconfig.json"}
+        {"path": "./codux.tsconfig.json"},
+        {"path": "./electron.tsconfig.json"}
     ]
 }

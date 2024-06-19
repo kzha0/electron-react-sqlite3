@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "_version": "3.0.0",
+    "compilerOptions": {
+        "composite": true,
+        "target": "ESNext",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+
+        "isolatedModules": true,
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+    },
+}
